@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+* {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p,
+a {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+
+body {
+    width: 100vw;    
+}
+
+section {
+    height: 100vh;
+    background-image: url(images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px ;
+}
+
+section ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+section ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+section ul li .pot {
+    color: black;
+    text-transform: uppercase;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+section h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.header-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.header-cont img {
+    padding-top: 30px;
+}
+
+main .contains {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contains .card {
+    text-align: center;
+    padding: 100px;
+    width: 50%;
+}
+
+.card h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 20px;
+    color: hsl(212, 27%, 19%);
+}
+
+.card p {
+    padding: 30px 0;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    line-height: 25px;
+    color: hsl(232, 10%, 55%);
+    margin-bottom: 30px;
+}
+
+.card a {
+    text-decoration: none;
+    border-bottom: 3px solid hsl(51, 100%, 49%);
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
+    margin: 30px;
+}
+
+.contains .img-box img {
+    width: 50vw;
+}
+
+/* content 2 styling */
+
+.content-2 {
+    display: flex;
+}
+
+.box1,
+.box2 {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box1 {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+
+}
+
+.box1 h3, p {
+    color: hsl(167, 40%, 24%);
+}
+
+.content-2 h3 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.box2 {
+    
+    background-image: url(images/desktop/image-photography.jpg);
+}
+
+.box2 h3, p {
+    color: hsl(198, 62%, 26%);
+}
+
+
+.content-2 p {
+    margin-bottom: 70px;
+    margin-inline: 130px;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* content 2 styling ending */
+
+
+
+.testimonials {
+    padding: 100px;
+}
+
+.testimonials h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Fraunces', serif;
+    color: hsl(210, 4%, 67%);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.monials {
+    display: flex;
+    gap: 30px;
+}
+
+.monials .descrip {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.monials img {
+    width: 80px;
+    margin-inline: auto;
+    border-radius: 50%;
+}
+
+.monials p {
+    color: hsl(232, 10%, 55%);
+}
+
+.job-tittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.job-tittle span {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.job-tittle p {
+    font-size: 14px;
+}
+
+.imagesss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.imagesss img {
+    width: 325px;
+}
+
+footer {
+    background-color: hsl(168, 54%, 69%);
+    text-align: center;
+}
+
+footer .st1 {
+    padding: 50px;
+}
+
+footer .us {
+    display: flex;
+    justify-content: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+footer p a:hover {
+    color: white;
+}
+
+footer .contact {
+    padding: 30px;
+}
+
+footer .contact img {
+    padding: 10px;
+    filter: brightness(50%);
+}
+
+footer .contact img:hover {
+    filter: brightness(100%);
+    fill: white;
+}
+
+
+
+
+
+
+
+
