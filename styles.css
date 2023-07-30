@@ -28,10 +28,66 @@ section {
     background-position: center;
 }
 
-section nav {
+nav {
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    position: relative;
+
+    @media screen and (max-width: 450px) {
+        flex-direction: column;
+    }
+}
+
+.mobile-toggle {
+    @media screen and (min-width: 450px) {
+        display: none;
+    }
+}
+
+.mobile-toggle {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+
+nav img {
+    @media screen and (max-width: 450px) {
+        width: 100px;
+        height: auto;
+    }
+}
+
+nav ul {
+    @media screen and (max-width: 450px) {
+        display: flex;
+        flex-direction: column;
+        background-color: blue;
+        position: absolute;
+        right: -100%;
+        /* animation: slideFromRight 0.5s ease; */
+    }
+}
+
+.open {
+    animation: slideFromRight 0.5s ease;
+    right: 0;
+}
+
+@keyframes slideFromRight {
+    0% {
+        right: -100%;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0;
+        opacity: 1;
+    }
 }
 
 section ul li {
@@ -303,12 +359,10 @@ footer .contact {
 
 footer .contact img {
     padding: 10px;
-
+    color: red;
+    fill: red;
 }
 
-footer .contact img:hover {
-    fill: #fff;
-}
 
 @media (max-width: 375px) {
     section {
