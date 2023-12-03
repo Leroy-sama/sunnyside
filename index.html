@@ -16,15 +16,7 @@
 <body>
     <header class="header">
         <nav>
-            <img src="images/desktop/logo.svg" alt="logo">
-            <input type="checkbox" id="check">
-            <label for="check">
-                <div class="burger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </label>
+            <img src="images/logo.svg" alt="logo">            
             <ul class="nav-links">
                 <li>
                     <a href="#">About</a>
@@ -39,7 +31,11 @@
                     <a href="#" class="contact__link">Contact</a>
                 </li>
             </ul>
-
+            <div class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
         <div class="header__content">
             <h1 class="header__text">
@@ -49,9 +45,9 @@
         </div>
     </header>
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="transform">
-                <div class="transorm__text">
+                <div class="transform__text">
                     <h2 class="text__heading">Transform your brand</h2>
                     <p class="text__desc">
                         We are a full-service creative agency specializing in helping brands grow fast.
@@ -60,14 +56,14 @@
                     <a href="#" class="transform__link">Learn more</a>
                 </div>
                 <picture>
-                    <source media="(min-width: 600px)" srcset="images/desktop/image-transform.jpg">
-                    <img src="images/mobile/image-transform.jpg" alt="transform image">
+                    <source media="(max-width: 560px)" srcset="images/mobile/image-transform.jpg">
+                    <img src="images/desktop/image-transform.jpg" alt="transform image">
                 </picture>
             </div>
             <div class="standout">
                 <picture>
-                    <source media="(min-width: 600px)" srcset="images/mobile/image-stand-out.jpg">
-                    <img src="images/mobile/image-stand-out.jpg" alt="standout image">
+                    <source media="(max-width: 560px)" srcset="images/mobile/image-stand-out.jpg">
+                    <img src="images/desktop/image-stand-out.jpg" alt="standout image">
                 </picture>
                 <div class="standout__text">
                     <h2 class="text__heading">Standout to the right audience</h2>
@@ -79,7 +75,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="design">
                 <h3 class="design__heading">Graphic Design</h3>
                 <p class="design__desc">
@@ -137,25 +133,25 @@
         </section>
         <div class="imagess">
             <picture>
-                <source media="(min-width: 600px)" srcset="images/desktop/image-gallery-milkbottles.jpg">
-                <img src="images/mobile/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
+                <source media="(max-width: 560px)" srcset="images/mobile/image-gallery-milkbottles.jpg">
+                <img src="images/desktop/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles">
             </picture>
             <picture>
-                <source media="(min-width: 600px)" srcset="images/desktop/image-gallery-orange.jpg">
-                <img src="images/mobile/image-gallery-orange.jpg" alt="image-gallery-orange">
+                <source media="(max-width: 560px)" srcset="images/mobile/image-gallery-orange.jpg">
+                <img src="images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange">
             </picture>
             <picture>
-                <source media="(min-width: 600px)" srcset="images/desktop/image-gallery-cone.jpg">
-                <img src="images/mobile/image-gallery-cone.jpg" alt="image-gallery-cone">
+                <source media="(max-width: 560px)" srcset="images/mobile/image-gallery-cone.jpg">
+                <img src="images/desktop/image-gallery-cone.jpg" alt="image-gallery-cone">
             </picture>
             <picture>
-                <source media="(min-width: 600px)" srcset="/images/desktop/image-gallery-sugarcubes.jpg">
-                <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="image-gallery-sugar-cubes">
+                <source media="(max-width: 560px)" srcset="images/mobile/image-gallery-sugar-cubes.jpg">
+                <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="image-gallery-sugar-cubes">
             </picture>
         </div>
     </main>
     <footer>
-        <img src="images/logo.svg" alt="logo" class="footer__logo">
+        <img src="images/desktop/logo.svg" alt="logo" class="footer__logo">
         <div class="links">
             <a href="#">About</a>
             <a href="#">Services</a>
@@ -168,6 +164,7 @@
             <img src="images/icon-pinterest.svg" alt="icon-pinterest">
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
